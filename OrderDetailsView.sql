@@ -24,3 +24,10 @@ create view Sales.v_OrderDetails as
 	inner join Sales.Employees e
 		on o.SalesPersonID = e.EmployeeID
 )
+
+
+-- Main Query 
+
+-- select 
+-- 	*
+-- from Sales.v_OrderDetails
