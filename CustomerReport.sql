@@ -1,5 +1,5 @@
-
-
+-- This Query is used to generate the report of the customer by using the 
+-- CTE methods.
 
 -- TotalSales CTE
 with cte_total_sales as(
@@ -21,7 +21,7 @@ with cte_total_sales as(
 , cte_rank_customers as (
 	select
 		CustomerID,
-		TotalSales,
+		TotalSales,  		
 		rank() over(order by TotalSales desc) as CustomerRank
 	from cte_total_sales
 )
